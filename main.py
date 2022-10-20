@@ -3,8 +3,8 @@ import secrets
 
 
 def create_url(target_url):
-    alphabet = string.ascii_uppercase + string.digits
-    key = ''.join(secrets.choice(alphabet) for _ in range(5))
+    alphabet = string.ascii_letters + string.digits
+    key = ''.join(secrets.choice(alphabet) for _ in range(6))
     secret_key = ''.join(secrets.choice(alphabet) for _ in range(10))
     shortened_url = base_url + key
     return shortened_url

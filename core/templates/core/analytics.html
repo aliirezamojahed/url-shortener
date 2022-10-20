@@ -1,0 +1,28 @@
+        <div class="col-sm-8">
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                Target URL
+              </div>
+              <div class="col">
+                Shortened URL
+              </div>
+              <div class="col">
+                Number of Visits
+              </div>
+            </div>
+            {% for b in benchmark %}
+            <div class="row align-items-start">
+              <div class="col">
+                {{ b.target_url }}
+              </div>
+              <div class="col">
+                {{ b.key }}
+              </div>
+              <div class="col">
+                {{ b.count }}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
